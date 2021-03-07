@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name ="author" content="Willy (Wo Wei) Lin">
+        <title>Lottery</title>
+    </head>
+    <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            h1{
+                font-family: 'Big Shoulders Inline Display';
+                text-shadow: 0 0 5px rgb(80, 78, 78);
+                color: #1d3806;
+                font-size: 30px;
+                margin-right: 50%;
+                opacity: 80%;
+                align-items: center;
+            }
+            .main {
+                background-color: white;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                width: 100%;
+                height: 100vh;
+            }
+            h4{
+                font-size: 20px;
+            }
+
+    </style>
+    <body>
+        <div class="main">
+
+            <header>
+                <h1>Winning Numbers and Lucky Ball </h1>
+            </header>
+            <script src="lottery.js" ></script>
+            <form>
+                <h4><br/>Enter your quick pick</h4>
+                <br/>
+                Enter five numbers seperated by spaces (from 1-48): <br /> <input type="text" name="entered" id="entered"><br />
+                <br>
+    
+                Enter a Lucky Ball number (from 1-18): <br/> <input type="text" name="enter" id="enter"><br />
+                <input type="button" value="Check" onclick = "calculateWin()">
+           </form>
+        </div>
+
+    </body>
+</html>
